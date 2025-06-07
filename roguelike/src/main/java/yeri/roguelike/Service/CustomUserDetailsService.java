@@ -3,10 +3,12 @@ package yeri.roguelike.Service;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 import yeri.roguelike.Details.CustomUserDetails;
 import yeri.roguelike.Entity.Users;
 import yeri.roguelike.Repository.UserRepo;
 
+@Service
 public class CustomUserDetailsService implements UserDetailsService {
     private final UserRepo userRepo;
 

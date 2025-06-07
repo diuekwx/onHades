@@ -30,6 +30,8 @@ public class Users {
     @OneToMany(mappedBy = "author", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Guides> guides = new ArrayList<>();
 
+    public Users() {}
+
     public Users(Timestamp created_at, String username, String password) {
         this.created_at = created_at;
         this.username = username;
