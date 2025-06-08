@@ -38,6 +38,9 @@ public class Guides {
     @OneToMany(mappedBy = "guide", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<GuideBoons> guideBoons = new ArrayList<>();
 
+    public Guides() {
+    }
+
     public UUID getId() {
         return id;
     }

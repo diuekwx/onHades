@@ -18,4 +18,7 @@ public class Weapons {
 
     @Column(columnDefinition = "TEXT")
     private String aspect;
+
+    public Weapons() {
+    }
 }
